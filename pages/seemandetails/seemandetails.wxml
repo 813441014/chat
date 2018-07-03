@@ -1,0 +1,18 @@
+<!--pages/seemandetails/seemandetails.wxml-->
+<view>
+    <view>
+      <view>个性签名</view>
+      <view>学习如逆水行舟</view>
+      <view>他的动态</view>
+      <view>
+        <image src="../../img/011.jpg" bindtap="character"></image>
+      </view>
+      <view>
+          <text>吃饭</text>
+      </view>
+      <view>个性标签</view>
+      <view>
+          <text>萌</text>
+      </view>
+    </view>
+</view>

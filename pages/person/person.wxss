@@ -1,0 +1,38 @@
+/* pages/person/person.wxss */
+.iconheader {
+  display: flex;
+  position: relative;
+}
+.iconheader .nav_inf{
+  flex:1;
+}
+.iconheader image{
+    width:160rpx;
+    height:160rpx;
+    object-fit: cover;
+}
+.iconheader .nav_age text{
+  display:inline-block;
+  padding:10rpx;
+  border-radius:4rpx;
+  border:1px solid #f3f3f3;
+}
+.iconheader .nav_edit{
+  position:absolute;
+  right:20rpx;
+  top: 10rpx;
+
+}
+.iconlist{
+  border-top: 1px solid #f3f3f3;
+  padding:0 20rpx;
+  line-height:80rpx;
+}
+.iconlist  text:nth-of-type(1){
+  width:200rpx;
+  display:inline-block;
+}
+.iconlist image{
+  width:200rpx;
+  height:100rpx;
+}

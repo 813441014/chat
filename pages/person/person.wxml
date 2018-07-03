@@ -1,0 +1,29 @@
+<!--pages/person/person.wxml-->
+<view>
+  <view class="iconheader">
+      <image src="../../img/indexicon.png"></image>
+      <view class="nav_inf">
+         <view>龙腾打折</view>
+         <view class="nav_age">
+          <text>29岁</text>
+          <text>金牛</text>
+         </view>
+         <view class="nav_adr">
+          <text>沈阳</text>
+          <text>产品</text>
+        </view>
+      </view>
+      <view class="nav_edit">编辑</view>
+  </view>
+  <view class="iconlist">
+    <text>个性签名</text>
+    <text>人生孤单二季末</text>
+  </view>
+  <view class="iconlist">
+    <text>我的动态</text>
+    <image src="../../img/indexicon.png"></image>
+  </view>
+  <view class="iconlist">  <text>默默的爱</text>有几个人喜欢了你</view>
+  <view class="iconlist"> <text>设置</text></view>
+  <view class="iconlist"> <text>推荐给好友</text></view>
+</view>

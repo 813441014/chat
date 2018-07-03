@@ -1,0 +1,15 @@
+<!--pages/character/character.wxml-->
+<view>
+  <view>
+      <image src="../../img/indexicon.png"></image>
+      <text>性感小美女</text>
+  </view>
+  <view>
+    <view bindtap='imgdetails'>
+        <view>5.13</view>
+        <image src="../../img/011.jpg"></image>
+        <view>文本内容</view>
+    </view> 
+  </view>
+</view>
+

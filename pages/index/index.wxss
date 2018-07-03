@@ -1,0 +1,210 @@
+/**index.wxss**/
+
+/*banner  */
+.headernav{
+  position: relative;
+}
+.headernav .search {
+  position:absolute;
+  top:20rpx;
+  right:20rpx;
+  width:60rpx;
+  height:60rpx;
+}
+.headernav .swiper-box {
+  display: block;
+  width: 100%;
+}
+
+.headernav .swiper-box view {
+  text-align: center;
+}
+.headernav swiper-item {
+overflow:auto;
+
+}
+.headernav swiper {
+  position:relative;
+
+width:750rpx;
+height:374rpx;
+overflow:hidden;
+
+
+}
+.headernav image {
+width:100%;
+height:100%;
+
+}
+.pagetol{
+  position: absolute;
+  bottom: 50rpx;
+  left: 0;
+  right: 0;
+  z-index: 1000000;
+  text-align: center;
+}
+.pagetol view{
+  width: 15rpx;
+  height: 15rpx;
+  background:#fff; 
+  margin:7rpx;
+  border-radius: 100%;
+  display: inline-block;
+}
+.pagetol .onnav{
+  background:#f8b5fa; 
+}
+/* 广告  */
+.notice swiper{
+  height: 40rpx;
+  font-size: 20rpx;
+  line-height: 40rpx;
+}
+/*消息  */
+.notice {
+  margin-top: -64rpx;
+  line-height: 40rpx;
+  color: #f93077;
+  position: relative;
+}
+.notice .noticeabo{
+  position: absolute;
+  left: 20rpx;
+  line-height: 40rpx;
+  font-size: 20rpx;
+}
+.notice .noticeabo image{
+  width: 22rpx;
+  height: 22rpx;
+  vertical-align: middle;
+}
+.notice text{
+  font-size: 20rpx;
+   line-height: 40rpx;
+   padding: 0 20rpx;
+   height: 40rpx;
+
+}
+.notice swiper{
+  padding:0 136rpx; 
+}
+
+/* 导航  */
+.swiper-tab{
+  position: relative;
+  z-index: 1000;
+  top: -64rpx;
+  height: 142rpx;
+  display: flex;
+  color: #fff;
+  padding: 0 20%;
+}
+.swiper-tab .swiper-tab-list{
+  width: 50%;
+  text-align: center;
+    margin-top: 64rpx;
+    font-size: 30rpx;
+    line-height: 78rpx;
+}
+.swiper-tab .on{
+position:relative;
+
+}
+.swiper-tab .on:after {
+  position: absolute;
+  bottom: 8rpx;
+  height: 6rpx;
+  content: '';
+  width:20%;
+  left: 40%;
+  background: #fff;
+}
+
+
+/*列表  */
+.swiper-box{
+  position: relative;
+  overflow: auto;
+}
+.swiper-box text{
+  font-size: 32rpx;
+  color: #6a6969;
+  font-weight: bold;
+
+}
+.swiper-box .content{
+  font-size: 20rpx;
+  color: #6a6969;
+
+}
+.boxcontent{
+  position: relative;
+  display: flex;
+}
+.boxcontent .tvstate{
+  position: absolute;
+  bottom: 0;
+  right: 20rpx;
+  font-size: 20rpx;
+  text-align: center;
+}
+.boxcontent .tvstate image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.swiper-box .swiper-tab-list{
+  display: none;
+}
+.swiper-box .onlist{
+  display: block;
+}
+.tvbox{
+  padding: 0 10rpx;
+}
+.kindsitem{
+
+  float: left;
+  padding: 0 10rpx;
+  width:345rpx;
+  border-radius:20rpx;
+overflow:hidden;
+
+}
+.tvitem{
+  position: relative;
+  height: 330rpx;
+  /* background: #999; */
+}
+
+.tvitem .tvname{
+  position: absolute;
+  bottom: 0;
+  left: 0rpx;
+  color: #fff;
+  background:rgba(0, 0, 0, 0.6);
+  line-height: 24rpx;
+  padding: 0 14rpx;
+  font-size: 20rpx;
+  height: 24rpx;
+  border-radius: 10rpx;
+}
+
+.tvitem .tvmoney{
+  position: absolute;
+  top: 0;
+  right: 0rpx;
+  font-size: 20rpx;
+   height: 30rpx;
+   line-height: 30rpx;
+  border-radius: 6rpx;
+   padding: 0 14rpx;
+  background:rgba(220, 220, 220, 0.65);
+  color: #a7cef3;
+}
+.tvitem image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

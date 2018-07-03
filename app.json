@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/friends/friends",
+    "pages/person/person",
+    "pages/seeman/seeman",
+    "pages/seemandetails/seemandetails",
+    "pages/character/character",
+    "pages/imgdetails/imgdetails",
+    "pages/talking/talking",
+    "pages/talkingdetails/talkingdetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/indexicon.png",
+        "selectedIconPath": "img/indexiconsel.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "iconPath": "img/newsicon.png",
+        "selectedIconPath": "img/newsiconsel.png",
+        "text": "好友"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "img/personicon.png",
+        "selectedIconPath": "img/personiconsel.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+<!--pages/friends/friends.wxml-->
+<view>
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">消息</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">好友</view>
+     <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">动态</view>
+  </view>
+
+  <view current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+    <!-- 我是哈哈 -->
+    <view class="swiper-tab-list {{currentTab==0 ? 'onlist' : ''}}">
+      <view class="tvbox">
+        <view wx:for="{{kinds}}" class="kindsitem">
+          <view class="tvitem" bindtap="indexdetails">
+            <view class="tvname">{{item.nickname}}</view>
+            <view class="tvmoney">90/分</view>
+            <image src="{{item.httpImg}}" mode="aspectFill"></image>
+          </view>
+          <view class="boxcontent">
+            <view>
+              <text>{{item.name}}</text>
+              <view class="content">
+                {{item.age}} {{item.address}} {{item.rick}}
+              </view>
+            </view>
+            <view class="tvstate">
+            <image src="../../img/state01.png"></image>
+            <view>空闲</view></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 我是呵呵 -->
+    <view class="swiper-tab-list {{currentTab==1 ? 'onlist' : ''}}">
+      <view class="tvbox">
+        <view wx:for="{{follow}}" class="kindsitem">
+          <view class="tvitem" bindtap="indexdetails">
+            <view class="tvname">{{item.nickname}}</view>
+            <view class="tvmoney">90/分</view>
+            <image src="{{item.httpImg}}" mode="aspectFill"></image>
+          </view>
+          <view>
+            <text>{{item.name}}</text>
+            <view class="content">
+              {{item.age}} {{item.address}} {{item.rick}}
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+     <view class="swiper-tab-list {{currentTab==2 ? 'onlist' : ''}}">
+      <view class="tvbox">
+        <view wx:for="{{kinds}}" class="kindsitem">
+          <view class="tvitem" bindtap="indexdetails">
+            <view class="tvname">{{item.nickname}}</view>
+            <view class="tvmoney">90/分</view>
+            <image src="{{item.httpImg}}" mode="aspectFill"></image>
+          </view>
+          <view class="boxcontent">
+            <view>
+              <text>{{item.name}}</text>
+              <view class="content">
+                {{item.age}} {{item.address}} {{item.rick}}
+              </view>
+            </view>
+            <view class="tvstate">
+            <image src="../../img/state01.png"></image>
+            <view>空闲</view></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

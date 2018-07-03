@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="headernav">
+    <swiper indicator-dots='{{ indicatordots01 }}' indicator-color='{{initcolor}}' indicator-active-color='{{initselcolor}}' autoplay="{{indicatordots01}}" interval='5000' duration="1000" current="{{currswiper}}" bindchange="bindChangeswi">
+      <block wx:for="{{banner}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item.httpImg}}" class="slide-image" mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="pagetol">
+      <block wx:for="{{banner}}">
+        <view class="{{currswiper == index ? 'onnav':''}}" data-current="{{index}}" bindtap="pagenow"></view>
+      </block>
+    </view>
+    <view class="search img-search" bindtap="gotoSearch"></view>
+  </view>
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">关注</view>
+  </view>
+
+  <view class="notice">
+    <view class="noticeabo">
+      <image src="../../img/notice.png"></image>
+      <block>官方公告:</block>
+    </view>
+    <swiper indicator-dots="{{ indicatordots01 }}" autoplay='true' interval='1500' duration="1000">
+      <block wx:for="{{notice}}" wx:key="*this">
+        <swiper-item>
+          <text>{{item}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+  <view current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+    <!-- 我是哈哈 -->
+    <view class="swiper-tab-list {{currentTab==0 ? 'onlist' : ''}}">
+      <view class="tvbox">
+        <view wx:for="{{kinds}}" class="kindsitem">
+          <view class="tvitem" bindtap="indexdetails">
+            <view class="tvname">{{item.nickname}}</view>
+            <view class="tvmoney">90/分</view>
+            <image src="{{item.httpImg}}" mode="aspectFill"></image>
+          </view>
+          <view class="boxcontent">
+            <view>
+              <text>{{item.name}}</text>
+              <view class="content">
+                {{item.age}} {{item.address}} {{item.rick}}
+              </view>
+            </view>
+            <view class="tvstate">
+            <image src="../../img/state01.png"></image>
+            <view>空闲</view></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 我是呵呵 -->
+    <view class="swiper-tab-list {{currentTab==1 ? 'onlist' : ''}}">
+      <view class="tvbox">
+        <view wx:for="{{follow}}" class="kindsitem">
+          <view class="tvitem" bindtap="indexdetails">
+            <view class="tvname">{{item.nickname}}</view>
+            <view class="tvmoney">90/分</view>
+            <image src="{{item.httpImg}}" mode="aspectFill"></image>
+          </view>
+          <view>
+            <text>{{item.name}}</text>
+            <view class="content">
+              {{item.age}} {{item.address}} {{item.rick}}
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+      <view bindtap="seeman">
+          一见钟情
+      </view>
+       <view bindtap="talking">
+          午夜匿聊
+      </view>
+  </view>
+</view>

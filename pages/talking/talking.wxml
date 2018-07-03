@@ -1,0 +1,23 @@
+<!--pages/talking/talking.wxml-->
+<view>
+  <view>
+    选择你需要匹配的对象
+  </view>
+  <view>
+      <text>异性</text>
+      <text>全部</text>
+  </view>
+  <view>
+  
+  </view>
+  <view>
+        匹配中
+  </view>
+  <view>
+      在线人数：15454
+      男女比例：201
+  </view>
+  <view bindtap="talkingdetails">454365656</view>
+</view>
+
+

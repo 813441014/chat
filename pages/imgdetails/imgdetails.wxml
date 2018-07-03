@@ -1,0 +1,9 @@
+<!--pages/imgdetails/imgdetails.wxml-->
+<view>
+  <view>
+      <image src="../../img/011.jpg"></image>
+  </view>
+  <text>
+  011
+  </text>
+</view>

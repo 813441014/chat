@@ -1,0 +1,8 @@
+<view>
+    <view bindtap="back">退出</view>
+    <view>
+    聊天对话中
+    
+    
+    </view>
+</view>
